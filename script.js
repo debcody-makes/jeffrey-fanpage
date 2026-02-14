@@ -1,3 +1,5 @@
+console.log("✅ submit fired");
+
 const SUPABASE_URL = "https://zjwvnyotathtmvvetndn.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_xG-TRPAjIbL0qgm2wklXzg_WQd7T5J1";
 
@@ -92,5 +94,6 @@ if (memoryForm) {
 
 const yearEl = document.querySelector("#year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 
 
