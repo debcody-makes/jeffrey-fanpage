@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Appreciation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <img src="assets/icons/favicon.png" alt="Jeffrey Icon" class="logo-icon">
+            <span>💘 Team Jeffrey</span>
+        </a>
+
+    
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About Him</a>
+        <a href="#gallery">In the Wild</a>
+        <a href="#memories">Memory Wall</a>
+      </nav>
+    </div>
+  </header>
+    <main>
+        <section id="hero" class="section hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>The Official Jeffrey Appreciation Page</h1>
+                    <p class="subtitle">A very serious website built with love, visual studio, and questionable levels of cheesiness.</p>
+
+            <div class="hero-cta">
+                <a class="btn" href="#gallery">See him in his natural habitat ↓</a>
+                <a class="btn btn-secondary" href="#memories">Drop a memory ✍️</a>
+            </div>
+
+            <p class="tiny-note">Warning: You may leave this page believing he is a national treasure.</p>
+            </div>
+
+            <figure class="hero-media">
+          <!-- TODO: add your main image/gif -->
+            <img
+                src="assets/images/epic.png"
+                alt="Jeffrey looking handsome and unbothered"
+            />
+            <figcaption>Exhibit A: The man. The myth. The Jeffrey.</figcaption>
+            </figure>
+            </div>
+        </section>
+
+    <!-- ===== 2) About Him (corny profile card) ===== -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About Jeffrey (corny but accurate)</h2>
+                <p class="section-intro">If you’re new here: welcome. If you already know him: yes, this is necessary.</p>
+             <div class="about-grid">
+          <figure class="about-photo">
+            <img
+              src="assets/images/jeffrey-about.jpg"
+              alt="Jeffrey surviving"
+            />
+            <figcaption>He thanks me everyday for putting him in questionable situations.</figcaption>
+          </figure>
+
+          <article class="about-card" aria-label="Jeffrey profile">
+            <ul class="stats">
+              <li><strong>Known for:</strong> <span>He won’t just build a campfire—he’ll design a proprietary three-stage combustion workflow for it</span></li>
+              <li><strong>Core traits:</strong> <span>Analytical, resourceful, and surprisingly patient</span></li>
+              <li><strong>Signature move:</strong> <span>Slowly backing away to fart</span></li>
+              <li><strong>Love language:</strong> <span>Anything food related, cuddles, listening to him talk about spreadsheets</span></li>
+              <li><strong>Favorite things:</strong> <span>Good food, alcohol, and gaming... also spreadsheets</span></li>
+            </ul>
+
+            <div class="about-tags" aria-label="Jeffrey traits">
+              <!-- TODO: turn these into “chips” with CSS -->
+              <span class="tag">Protector</span>
+              <span class="tag">Goofy</span>
+              <span class="tag">Hardworking</span>
+              <span class="tag">Spreadsheet Sensei 🥷</span>
+              <span class="tag">Secret Softie</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Jeffrey in His True Nature</h2>
+        <p class="section-intro">
+          Photos, gifs, and videos that capture the real energy.
+        </p>
+        
+        <div class="gallery-grid" aria-label="Gallery items">
+            
+        <figure class="gallery-item" data-category="chaos">
+            <div class="media-frame">
+                <video controls>
+                    <source src="assets/videos/Jeff-funny.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <figcaption>His reaction when I ask him to clean up his beard</figcaption>
+        </figure>
+
+          <figure class="gallery-item" data-category="sweet">
+            <div class="media-frame">
+                <img src="assets/images/family.png" alt="Jeffrey being a caring dad" />
+            </div>
+            <figcaption>He's a family man</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="chaos">
+            <div class="media-frame">
+                <video controls>
+                    <source src="assets/videos/bad-jeff.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <figcaption>Him 99.9% of the time</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="sweet">
+            <div class="media-frame">
+                <img src="assets/images/he-loves-me.jpg" alt="Jeff love" />
+            </div>
+            <figcaption>He has a way of expressing love</figcaption>
+          </figure>
+        
+          <figure class="gallery-item" data-category="chaos">
+            <div class="media-frame">
+                <img src="assets/images/side-eye.jpg" alt="Jeffrey with a side eye look" />
+            </div>
+            <figcaption>He loves the toddler stage!</figcaption>
+          </figure>
+      
+          <figure class="gallery-item" data-category="sweet">
+            <div class="media-frame">
+                <img src="assets/images/Jeff-about.png" alt="Pensive" />
+            </div>
+            <figcaption>Always a step ahead, with his planning</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <!-- ===== 5) Memory Wall (form + comic bubbles) ===== -->
+    <section id="memories" class="section memories">
+      <div class="container">
+        <h2>Memory Wall</h2>
+        <p class="section-intro">
+          Friends & family: drop a memory. It will pop up instantly in a comic bubble.
+        </p>
+
+        <div class="memories-grid">
+          <!-- Form -->
+          <form id="memoryForm" class="memory-form">
+            <label>
+              Your name
+              <input type="text" id="memoryName" name="memoryName" placeholder="e.g., Mike" required />
+            </label>
+
+            <label>
+              Relationship
+              <select id="memoryRelation" name="memoryRelation">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="coworker">Coworker</option>
+                <option value="mistress">Mistress</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Memory
+              <textarea
+                id="memoryText"
+                name="memoryText"
+                rows="5"
+                placeholder="Tell us your favorite Jeffrey moment..."
+                required
+              ></textarea>
+            </label>
+
+            <label>
+              Vibe
+              <select id="memoryMood" name="memoryMood">
+                <option value="funny">Funny</option>
+                <option value="sweet">Sweet</option>
+                <option value="chaotic">Chaotic</option>
+                <option value="dangerous">Dangerous</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+
+            <button type="submit" class="btn">Post memory</button>
+
+            <p class="tiny-note">
+              (Later you can save these with localStorage so they stay after refresh.)
+            </p>
+          </form>
+
+          <!-- Display area -->
+          <div class="memory-wall-wrap" aria-label="Memory wall">
+            <div class="memory-wall" id="memoryList">
+              <!-- JS will append comic bubbles here -->
+              <article class="bubble bubble-sweet">
+                <p class="bubble-text">Example bubble: “Jeffrey once…”</p>
+                <p class="bubble-meta">— Name, relationship</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="legal-section" id="privacy">
+  <div class="container">
+    <div class="legal-card">
+      <h2 class="legal-title">Privacy, Rights & Complaints</h2>
+
+      <p>
+        This is a private fanpage made for friends & family. If you need to contact
+        the owner of said Jeffrey, submit praise, or file a playful complaint,
+        please do so by texting the creator (Deb). Complaints will be reviewed
+        and probably laughed at.
+      </p>
+
+      <p>
+        <strong>No data is sold.</strong> Any “memories” entered are just for laughs.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Footer ===== -->
+<!-- Pre-footer: About + Links -->
+<section class="prefooter" id="contact">
+  <div class="container">
+    <div class="footer-shell">
+      <div class="footer-grid">
+
+        <div class="footer-card">
+          <h3 class="footer-title">About this Fanpage</h3>
+          <p>
+            Built with love, jokes, and 100% certified corny energy. This site exists to
+            celebrate Jeffrey and document the evidence.
+          </p>
+        </div>
+
+        <div class="footer-card">
+          <h3 class="footer-title">Links</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About Jeffrey</a></li>
+            <li><a href="#gallery">In the Wild</a></li>
+            <li><a href="#memories">Memory Wall</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Actual footer: small + centered -->
+<footer class="mini-footer">
+  <div class="container">
+    <p class="mini-footer-text">
+      © <span id="year"></span> The Jeffrey Fanpage Society • Made with love + chaos 🫶
+    </p>
+  </div>
+</footer>
+
+
