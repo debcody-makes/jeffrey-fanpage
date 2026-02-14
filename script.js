@@ -1,3 +1,10 @@
+const SUPABASE_URL = "https://zjwvnyotathtmvvetndn.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_xG-TRPAjIbL0qgm2wklXzg_WQd7T5J1";
+
+const supabase = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_ANON_KEY
+);
 
 // ===== Memory Wall =====
 const memoryForm = document.querySelector("#memoryForm");
@@ -41,3 +48,4 @@ if (memoryForm && memoryList) {
 
 const yearEl = document.querySelector("#year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
