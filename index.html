@@ -6,7 +6,7 @@
     <title>Jeffrey Appreciation Page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="script.js" defer></script>
+    <script src="script.js?v=2" defer></script>
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 </head>
 <body>
@@ -192,18 +192,16 @@
                 <option value="other">Other</option>
               </select>
             </label>
-
+            <label>
+              Access code
+              <input type="password" id="memoryCode" autocomplete="off" placeholder="Ask Deb for the code 😌" required />
+            </label>
             <button type="submit" class="btn">Post memory</button>
           </form>
 
           <!-- Display area -->
           <div class="memory-wall-wrap" aria-label="Memory wall">
             <div class="memory-wall" id="memoryList">
-              <!-- JS will append comic bubbles here -->
-              <article class="bubble bubble-sweet">
-                <p class="bubble-text">Example bubble: “Jeffrey once…”</p>
-                <p class="bubble-meta">— Name, relationship</p>
-              </article>
             </div>
           </div>
         </div>
@@ -268,6 +266,7 @@
     </p>
   </div>
 </footer>
+
 
 
 
